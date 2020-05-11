@@ -7,7 +7,7 @@ import Button from "../components/UI/Button";
 
 class Header extends Component {
   state = {
-    links: ["home", "about", "services", "pricing", "contact"],
+    links: ["home", "about", "services", "contact"],
   };
 
   buttonClickHandler = () => {
@@ -20,7 +20,7 @@ class Header extends Component {
     };
 
     return (
-      <header style={styles} className={classes.Header}>
+      <header id="home" style={styles} className={classes.Header}>
         <Nav links={this.state.links} />
         <div className={classes.Header__card}>
           <h1 className={classes.Header__card__h1}>

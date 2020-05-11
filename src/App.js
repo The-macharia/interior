@@ -3,6 +3,7 @@ import Header from "./containers/Header";
 import About from "./containers/About";
 import Services from "./containers/Services";
 import Aux from "./hoc/Aux";
+import Contact from "./containers/Contact";
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <main>
           <About />
           <Services />
+          <Contact/>
         </main>
       </Aux>
     );
