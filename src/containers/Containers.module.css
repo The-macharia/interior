@@ -1,0 +1,27 @@
+.Header {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.Header__card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.Header__card__h1 {
+    font-size: 4.5rem;
+}
+
+.Services{
+  background-image: linear-gradient(to right, #271e02cc,#daa30e80);
+}
+
+.Contact{
+
+}

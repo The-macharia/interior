@@ -1,0 +1,17 @@
+.Image{
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: 0 2rem 1rem rgba(0,0,0, .56);
+}
+
+.Image::before{
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    width: 100%;
+    height: 100%;
+    right: -2rem;
+    border-bottom: 2rem solid yellow;
+    border-right: 2rem solid yellow;
+}
