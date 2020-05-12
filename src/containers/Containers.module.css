@@ -7,6 +7,7 @@
 .Header__card {
   position: absolute;
   top: 50%;
+  padding: .2rem;
   left: 50%;
   width: 100%;
   color: white;
@@ -22,6 +23,13 @@
   background-image: linear-gradient(to right, #271e02cc,#daa30e80);
 }
 
-.Contact{
+.Services__quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.Contact{
+  background-position: center;
+  background-size: cover;
 }

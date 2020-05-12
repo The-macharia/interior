@@ -1,23 +1,21 @@
 import React from "react";
 import MenuIcon from "@material-ui/icons/Menu";
 import Logo from "../UI/Logo";
+import Link from "../Navigation/Link";
+import { Button } from "@material-ui/core";
 
 const Nav = (props) => {
   const styles = {
     backgroundColor: "transparent !important",
   };
-  const linkStyles = {
-    textTransform: "capitalize",
-    color: "white",
-    fontSize: "1.8rem",
-    padding: "1rem 1.5rem",
-  };
+
   return (
-    <nav className="navbar navbar-expand-lg" style={styles}>
+    <nav className="navbar navbar-expand-sm fixed-top" style={styles}>
       <a className="navbar-brand mr-auto" href="/">
         <Logo />
       </a>
-      <button
+      <Button
+        style={{color: 'white', borderRadius: '50%', width: '3rem' }}
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -27,22 +25,14 @@ const Nav = (props) => {
         aria-label="Toggle navigation"
       >
         <span>
-          <MenuIcon style={{ color: "white" }} />
+          <MenuIcon style={{ color: "white",fontSize: '3rem' }} />
         </span>
-      </button>
+      </Button>
       <div
         className="collapse navbar-collapse justify-content-center"
         id="navbarText"
       >
-        <ul className="navbar-nav">
-          {props.links.map((link) => (
-            <li className="nav-item active" key={link}>
-              <a className="nav-link" href={`#${link}`} style={linkStyles}>
-                {link}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <Link links={props.links} color={"white"} />
       </div>
     </nav>
   );

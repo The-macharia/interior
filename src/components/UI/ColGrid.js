@@ -1,14 +1,16 @@
 import React from "react";
-// import Grid from "@material-ui/core/Grid";
 import Image from "../../assets/map.png";
-// import Paper from "@material-ui/core/Paper";
 import classes from "./Ui.module.css";
 import Aux from "../../hoc/Aux";
 import { Paper } from "@material-ui/core";
-import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 
 const ColGrid = (props) => {
   const styles = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+  const spanStyles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -42,7 +44,7 @@ const ColGrid = (props) => {
         {props.mantras.map((mantra) =>
           Object.entries(mantra).map((mant) => (
             <div className="col-md-4 my-4 text-center" key={mant[0]}>
-              <Paper  className="card" elevation={1}>
+              <Paper className="card" elevation={1}>
                 <div className="card-body">
                   <h5 className="card-title">{mant[0]}</h5>
                   <p className="card-text">{mant[1]}</p>
@@ -53,34 +55,24 @@ const ColGrid = (props) => {
         )}
       </div>
 
-      <div className="row">
-        <div className="col-md-4 text-center">
-            <div className="card d-flex flex-row">
-              <span><EmojiEmotionsIcon style={{color: '#C6AD63', fontSize: '6rem'}}/></span>
-              <div className="w-100">
-                <h5 className="card-title text-center w-100">Happy Customers</h5>
-                <p className="card-text text-center w-100">Happy Customers</p>
+      <div className="row justify-content-center">
+        {props.stats.map((design) =>
+          Object.entries(design).map((des) => (
+            <div className="col text-center my-3" key={design}>
+              <div className="card d-flex flex-row" style={{padding: '1rem 1.5rem'}}>
+                <span style={spanStyles}>{des[1].icon}</span>
+                <div className="w-100">
+                  <h5 className="card-title text-center w-100" style={{fontSize: '4rem'}}>
+                    {des[1].title}
+                  </h5>
+                  <p className="card-text text-center w-100" style={{fontSize: '2rem'}}>
+                    {des[1].subtitle}
+                  </p>
+                </div>
               </div>
             </div>
-        </div>
-        <div className="col-md-4 text-center">
-            <div className="card d-flex flex-row">
-              <span><EmojiEmotionsIcon style={{color: '#C6AD63', fontSize: '6rem'}}/></span>
-              <div className="w-100">
-                <h5 className="card-title text-center w-100">Projects Completed</h5>
-                <p className="card-text text-center w-100">Projects Completed</p>
-              </div>
-            </div>
-        </div>
-        <div className="col-md-4 text-center">
-            <div className="card d-flex flex-row">
-              <span><EmojiEmotionsIcon style={{color: '#C6AD63', fontSize: '6rem'}}/></span>
-              <div className="w-100">
-                <h5 className="card-title text-center w-100">Years Of Experience</h5>
-                <p className="card-text text-center w-100">Years Of Experience</p>
-              </div>
-            </div>
-        </div>
+          ))
+        )}
       </div>
     </Aux>
   );
