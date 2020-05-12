@@ -2,21 +2,21 @@ import React from "react";
 import Heading from "../components/UI/Heading";
 import Link from "../components/Navigation/Link";
 import { Paper } from "@material-ui/core";
-// import Image from "../assets/img11.jpg";
+import Logo from "../components/UI/Logo";
 
 const Footer = (props) => {
   return (
     <div className="container-fluid m-0-auto">
       <div className="container">
         <div className="row align-items-center m-0">
-          {/* <div className="col-md-6 mb-sm-3">
-
-          </div> */}
-          <div className="col-md-6 mb-sm-3">
+          <div className="col-md-4 mb-sm-3">
+            <Logo />
+          </div>
+          <div className="col-md-4 mb-sm-3">
             <Heading title={"Site Map"} />
             <Link links={props.links} flex={"row"} color={"#04091E"} />
           </div>
-          <div className="col-md-6 mt-sm-3">
+          <div className="col-md-4 mt-sm-3">
             <Heading title={"Let's Get Social"} />
             <span className="d-flex justify-content-center w-100">
               {props.social.map((design) =>
