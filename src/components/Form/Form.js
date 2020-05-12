@@ -19,7 +19,7 @@ const Form = (props) => {
         name="name"
         type="text"
         required
-        value={props.value}
+        onChange={props.changed}
         style={{
           color: "white",
           width: "100%",
@@ -33,7 +33,7 @@ const Form = (props) => {
         type="email"
         name="email"
         required
-        value={props.value}
+        onChange={props.changed}
         style={{
           color: "white",
           width: "100%",
@@ -46,7 +46,7 @@ const Form = (props) => {
         label="Subject"
         type="text"
         name="subject"
-        value={props.value}
+        onChange={props.changed}
         style={{
           color: "white",
           width: "100%",
@@ -60,11 +60,11 @@ const Form = (props) => {
         rowsMin={3}
         type="textarea"
         name="message"
-        value={props.value}
         required
         placeholder="Your Message"
+        onChange={props.changed}
         style={{
-          color: "white",
+          color: "#04091e",
           width: "100%",
           backgroundColor: "transparent",
           margin: "2rem 0",
@@ -72,7 +72,7 @@ const Form = (props) => {
           borderRadius: ".5rem",
         }}
       />
-      <div className='text-center'>
+      <div className="text-center">
         <Button
           variant="contained"
           size="large"

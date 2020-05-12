@@ -32,6 +32,27 @@ class Contact extends Component {
         },
       },
     ],
+    form: {
+      name: {
+        value: "",
+      },
+      email: {
+        value: "",
+      },
+      subject: {
+        value: "",
+      },
+      message: {
+        value: "",
+      },
+    },
+  };
+
+  handleChangeHandler = (e, name) => {
+    const updatedForm = this.state.form;
+    updatedForm[name] = { ...updatedForm[name], value: e.target.value };
+    this.setState({ form: updatedForm });
+    console.log(this.state.form[name].value);
   };
 
   render() {
@@ -52,10 +73,13 @@ class Contact extends Component {
             color={"white"}
           />
           <div className="row">
-            <div className="col-md-6 align-middle">
+            <div className="col-md-6">
               {this.state.contact.map((design) =>
                 Object.entries(design).map((des) => (
-                  <div className="col text-center my-3" key={design}>
+                  <div
+                    className="col-xs-12 col-md text-center my-3"
+                    key={design}
+                  >
                     <div
                       className="card d-flex flex-row"
                       style={{ padding: "1rem 1.5rem" }}
@@ -80,8 +104,12 @@ class Contact extends Component {
                 ))
               )}
             </div>
-            <div className="col-md-6 d-flex justify-content-center flex-column">
-              <Form />
+            <div className="col-md-6">
+              <Form
+                changed={(e, name) =>
+                  this.handleChangeHandler(e, e.target.name)
+                }
+              />
             </div>
           </div>
         </div>
