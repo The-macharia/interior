@@ -61,6 +61,7 @@ a {
 
 a:hover {
   color: #04091e !important;
+  letter-spacing: .1rem;
 }
 
 .card {
@@ -81,10 +82,11 @@ a:hover {
   color: #8e701d !important;
 }
 
+nav {
+  background-color: #8e701d;
+  box-shadow: 0 .1rem .2rem #04091e;
+}
 @media (max-width: 600px) {
-  nav {
-    background-color: #8e701d;
-  }
   p {
     text-align: center;
   }

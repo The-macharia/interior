@@ -14,7 +14,7 @@ const Footer = (props) => {
           </div>
           <div className="col-md-4 mb-sm-3">
             <Heading title={"Site Map"} />
-            <Link links={props.links} flex={"row"} color={"#04091E"} />
+            <Link links={props.links} flex={"row"} color={"#8e701d"} />
           </div>
           <div className="col-md-4 mt-sm-3">
             <Heading title={"Let's Get Social"} />
@@ -40,7 +40,7 @@ const Footer = (props) => {
           <hr style={{ backgroundColor: "#C6AD63", width: "80%" }} />
           <p
             className="w-100"
-            style={{ letterSpacing: ".1rem" }}
+            style={{color: '#04091e', letterSpacing: ".1rem" }}
           >
             Copyright Jowagi Agency &copy;2020
           </p>
