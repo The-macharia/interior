@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import Nav from "../components/Navigation/Nav";
 import Image from "../assets/img2.jpg";
-import classes from './Containers.module.css';
+import classes from "./Containers.module.css";
 import Button from "../components/UI/Button";
 
-
 class Header extends Component {
-
   buttonClickHandler = () => {
-      console.log('working')
-  }
+    console.log("working");
+  };
 
   render() {
     const styles = {
@@ -24,7 +22,9 @@ class Header extends Component {
             Concept Designs <br />
             For Stylish Living.
           </h1>
-          <Button clicked={this.buttonClickHandler}>Check Pricing</Button>
+          <Button variant={"outlined"} href={"#contact"}>
+            Contact Us
+          </Button>
         </div>
       </header>
     );

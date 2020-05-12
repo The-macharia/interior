@@ -9,7 +9,7 @@ const styles = {
 }
 
 const Button = (props) => (
-  <Buttons variant="outlined" onClick={props.clicked}  style={styles}>
+  <Buttons variant={props.variant} href={props.href} onClick={props.clicked}  style={styles}>
     {props.children}
   </Buttons>
 );

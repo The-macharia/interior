@@ -52,7 +52,7 @@ class Contact extends Component {
             color={"white"}
           />
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 align-middle">
               {this.state.contact.map((design) =>
                 Object.entries(design).map((des) => (
                   <div className="col text-center my-3" key={design}>
@@ -80,7 +80,7 @@ class Contact extends Component {
                 ))
               )}
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 d-flex justify-content-center flex-column">
               <Form />
             </div>
           </div>

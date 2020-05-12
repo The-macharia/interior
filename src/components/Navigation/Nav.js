@@ -10,12 +10,12 @@ const Nav = (props) => {
   };
 
   return (
-    <nav className="navbar navbar-expand-sm fixed-top" style={styles}>
+    <nav className="navbar navbar-expand-sm fixed-top w-100" style={styles}>
       <a className="navbar-brand mr-auto" href="/">
         <Logo />
       </a>
       <Button
-        style={{color: 'white', width: '3rem' }}
+        style={{ color: "#04091e", backgroundColor: "#8e701d" }}
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -25,7 +25,7 @@ const Nav = (props) => {
         aria-label="Toggle navigation"
       >
         <span>
-          <MenuIcon style={{ color: 'white',fontSize: '3rem' }} />
+          <MenuIcon style={{ color: "white", fontSize: "3rem" }} />
         </span>
       </Button>
       <div
