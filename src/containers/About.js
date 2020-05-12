@@ -40,7 +40,11 @@ class About extends Component {
     return (
       <section id="about">
         <div className="container">
-          <Heading title={"About Us"} subtitle={"We Make It Happen"} />
+          <Heading
+            title={"About Us"}
+            subtitle={"We Make It Happen"}
+            color={"#222"}
+          />
           <ColGrid mantras={this.state.mantras} stats={this.state.stats} />
         </div>
       </section>

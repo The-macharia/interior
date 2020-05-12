@@ -15,7 +15,7 @@ const Nav = (props) => {
         <Logo />
       </a>
       <Button
-        style={{color: 'white', borderRadius: '50%', width: '3rem' }}
+        style={{color: 'white', width: '3rem' }}
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -25,7 +25,7 @@ const Nav = (props) => {
         aria-label="Toggle navigation"
       >
         <span>
-          <MenuIcon style={{ color: "white",fontSize: '3rem' }} />
+          <MenuIcon style={{ color: 'white',fontSize: '3rem' }} />
         </span>
       </Button>
       <div

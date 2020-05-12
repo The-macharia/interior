@@ -40,7 +40,7 @@ const Footer = (props) => {
           <hr style={{ backgroundColor: "#C6AD63", width: "80%" }} />
           <p
             className="w-100"
-            style={{ fontSize: "2rem", letterSpacing: ".1rem" }}
+            style={{ letterSpacing: ".1rem" }}
           >
             Copyright Jowagi Agency &copy;2020
           </p>

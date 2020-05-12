@@ -3,13 +3,13 @@ import Heading from "../components/UI/Heading";
 import ServiceRow from "../components/UI/ServiceRow";
 import classes from "./Containers.module.css";
 import Button from "../components/UI/Button";
-import PeopleIcon from '@material-ui/icons/People';
-import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
-import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
+import PeopleIcon from "@material-ui/icons/People";
+import AllInclusiveIcon from "@material-ui/icons/AllInclusive";
+import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 // import InvertColorsIcon from '@material-ui/icons/InvertColors';
-import CommentIcon from '@material-ui/icons/Comment';
-import EcoIcon from '@material-ui/icons/Eco';
-import LayersIcon from '@material-ui/icons/Layers';
+import CommentIcon from "@material-ui/icons/Comment";
+import EcoIcon from "@material-ui/icons/Eco";
+import LayersIcon from "@material-ui/icons/Layers";
 class Services extends Component {
   state = {
     services: [
@@ -53,7 +53,7 @@ class Services extends Component {
       {
         interior: {
           title: "Expert Technicians",
-          icon: <PeopleIcon style={{fontSize: '2.5rem'}}/>,
+          icon: <PeopleIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
             "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
         },
@@ -61,7 +61,7 @@ class Services extends Component {
       {
         land: {
           title: "Professional Service",
-          icon: <EcoIcon style={{fontSize: '2.5rem'}}/>,
+          icon: <EcoIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
             "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
         },
@@ -69,7 +69,7 @@ class Services extends Component {
       {
         concept: {
           title: "Great Support",
-          icon: <AllInclusiveIcon style={{fontSize: '2.5rem'}}/>,
+          icon: <AllInclusiveIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
             "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
         },
@@ -77,7 +77,7 @@ class Services extends Component {
       {
         arch: {
           title: "Technical Skills",
-          icon: <LayersIcon style={{fontSize: '2.5rem'}}/>,
+          icon: <LayersIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
             "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
         },
@@ -85,7 +85,7 @@ class Services extends Component {
       {
         tree: {
           title: "Positive Reviews",
-          icon: <CommentIcon style={{fontSize: '2.5rem'}}/>,
+          icon: <CommentIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
             "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
         },
@@ -93,7 +93,7 @@ class Services extends Component {
       {
         recommend: {
           title: "Highly Recommended",
-          icon: <VerifiedUserIcon style={{fontSize: '2.5rem'}}/>,
+          icon: <VerifiedUserIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
             "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
         },
@@ -105,7 +105,11 @@ class Services extends Component {
     return (
       <section id="services" className={classes.Services}>
         <div className="container">
-          <Heading title={"Our Services"} subtitle={"We Make It Happen"} />
+          <Heading
+            title={"Our Services"}
+            subtitle={"We Make It Happen"}
+            color={"white"}
+          />
           <ServiceRow services={this.state.services} />
         </div>
         <div
@@ -143,6 +147,7 @@ class Services extends Component {
           <Heading
             title={"What Makes Us Unique"}
             subtitle={"We Make It Happen"}
+            color={"white"}
           />
           <ServiceRow services={this.state.unique} />
         </div>

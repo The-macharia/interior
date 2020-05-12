@@ -1,12 +1,13 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-const styles = {
-  textAlign: "center",
-  marginBottom: "3rem",
-};
-
 const Heading = (props) => {
+  const styles = {
+    textAlign: "center",
+    marginBottom: "3rem",
+    color: props.color,
+  };
+
   const subtitle = props.subtitle ? (
     <div className="d-flex">
       <hr style={{ backgroundColor: "#C6AD63", width: "20%" }} />
