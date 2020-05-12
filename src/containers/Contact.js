@@ -73,7 +73,7 @@ class Contact extends Component {
             color={"white"}
           />
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 d-flex flex-column justify-content-center">
               {this.state.contact.map((design) =>
                 Object.entries(design).map((des) => (
                   <div
@@ -82,13 +82,13 @@ class Contact extends Component {
                   >
                     <div
                       className="card d-flex flex-row"
-                      style={{ padding: "1rem 1.5rem" }}
+                      style={{ padding: "1rem 1.5rem", backgroundColor: 'transparent', color: 'white' }}
                     >
                       <span style={spanStyles}>{des[1].icon}</span>
                       <div className="w-100">
                         <h5
                           className="card-title text-center w-100"
-                          style={{ fontSize: "2rem" }}
+                          style={{ fontSize: "2rem", color: '#8e701d' }}
                         >
                           {des[1].title}
                         </h5>

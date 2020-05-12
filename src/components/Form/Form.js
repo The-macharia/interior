@@ -1,9 +1,16 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
-import TextareaAutosize from "@material-ui/core/TextareaAutosize";
 import { Button } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 const Form = (props) => {
+  const styles = {
+    color: "white",
+    width: "100%",
+    backgroundColor: "transparent",
+    margin: "2rem 0",
+    borderRadius: ".5rem",
+    fontSize: "1.7rem"
+  };
   return (
     <form
       onSubmit={props.submitHandler}
@@ -20,13 +27,8 @@ const Form = (props) => {
         type="text"
         required
         onChange={props.changed}
-        style={{
-          color: "white",
-          width: "100%",
-          backgroundColor: "transparent",
-          margin: "2rem 0",
-          borderRadius: ".5rem",
-        }}
+        style={styles}
+        size="large"
       />
       <TextField
         label="Email"
@@ -34,51 +36,37 @@ const Form = (props) => {
         name="email"
         required
         onChange={props.changed}
-        style={{
-          color: "white",
-          width: "100%",
-          backgroundColor: "transparent",
-          margin: "2rem 0",
-          borderRadius: ".5rem",
-        }}
+        style={styles}
+        size="large"
       />
       <TextField
         label="Subject"
         type="text"
         name="subject"
         onChange={props.changed}
-        style={{
-          color: "white",
-          width: "100%",
-          backgroundColor: "transparent",
-          margin: "2rem 0",
-          borderRadius: ".5rem",
-        }}
+        style={styles}
+        size="large"
       />
-      <TextareaAutosize
+      <TextField
         aria-label="message textarea"
         rowsMin={3}
         type="textarea"
         name="message"
         required
+        multiline
         placeholder="Your Message"
         onChange={props.changed}
-        style={{
-          color: "#04091e",
-          width: "100%",
-          backgroundColor: "transparent",
-          margin: "2rem 0",
-          padding: "1rem",
-          borderRadius: ".5rem",
-        }}
+        style={styles}
+        size="large"
       />
+
       <div className="text-center">
         <Button
           variant="contained"
           size="large"
           type="submit"
           color="primary"
-          endIcon={<SendIcon sytle={{ fontSize: "1.4rem" }} />}
+          endIcon={<SendIcon style={{ fontSize: "2rem", color: "white" }} />}
         >
           Send
         </Button>
