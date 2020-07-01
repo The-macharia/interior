@@ -14,7 +14,15 @@ class Contact extends Component {
         address: {
           title: "Address",
           icon: <LocationOnIcon style={{ fontSize: "3rem" }} />,
-          subtitle: "Sony laptops are among ",
+          subtitle: (
+            <span>
+              Tusker House
+              <br />
+              Ronald Ngara Street
+              <br />
+              Nairobi
+            </span>
+          ),
         },
       },
       {
@@ -82,13 +90,17 @@ class Contact extends Component {
                   >
                     <div
                       className="card d-flex flex-row"
-                      style={{ padding: "1rem 1.5rem", backgroundColor: 'transparent', color: 'white' }}
+                      style={{
+                        padding: "1rem 1.5rem",
+                        backgroundColor: "transparent",
+                        color: "white",
+                      }}
                     >
                       <span style={spanStyles}>{des[1].icon}</span>
                       <div className="w-100">
                         <h5
                           className="card-title text-center w-100"
-                          style={{ fontSize: "2rem", color: '#8e701d' }}
+                          style={{ fontSize: "2rem", color: "#8e701d" }}
                         >
                           {des[1].title}
                         </h5>

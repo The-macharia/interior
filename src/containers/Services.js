@@ -17,14 +17,14 @@ class Services extends Component {
         interior: {
           title: "Interior Design",
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "We make your home interior beautiful, safe and comfortable for your stay. We creatively determine the requirements of the space available and select essential, beautiful and decorative concepts such as paints and lighting. You will always want to come Home🏡",
         },
       },
       {
         land: {
           title: "Land Scaping",
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "We create visual attraction in layering, texture contrast, colour and bloom. We improve your outdoor space by planning, designing and modifying the visible features in your environment which entails the flora and fauna to bring joy, beauty, symmetry, balance to nature and a peaceful place to stroll on. We execute hardscapes, walkways,play areas, fences, herb gardens, pools, fountains, landscape, garden lighting and keeping pollinators alive by planting flowers.",
         },
       },
       {
@@ -45,7 +45,7 @@ class Services extends Component {
         tree: {
           title: "Tree Planting",
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "We transfer tree seedlings based on our clients needs and purpose but generally for landscaping purposes, land reclamation or forestry. We help our clients plant and maintain the tree seedlings till maturity. We also offer advice on how to maintain the tree seedlings.",
         },
       },
     ],
@@ -55,7 +55,7 @@ class Services extends Component {
           title: "Expert Technicians",
           icon: <PeopleIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "Our personell are fully trained and highly skilled to deliver and satisfy clients expectations and beyond.",
         },
       },
       {
@@ -107,7 +107,7 @@ class Services extends Component {
         <div className="container">
           <Heading
             title={"Our Services"}
-            subtitle={"We Make It Happen"}
+            subtitle={"We Play To Win"}
             color={"white"}
           />
           <ServiceRow services={this.state.services} />

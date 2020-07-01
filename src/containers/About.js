@@ -9,27 +9,30 @@ class About extends Component {
   state = {
     mantras: [
       { vision: "to be internationally recognized as world leader" },
-      { mission: "to be internationally recognized as world leader" },
-      { values: "to be internationally recognized as world leader" },
+      {
+        mission:
+          "To make a difference by providing quality design for your space",
+      },
+      { values: "Integrity | Efficiency | Commitment | Dependability" },
     ],
     stats: [
       {
         interior: {
-          title: "100+",
+          title: "500+",
           icon: <StarsIcon style={{ fontSize: "6rem" }} />,
           subtitle: "Projects Completed.",
         },
       },
       {
         land: {
-          title: "90+",
+          title: "500+",
           icon: <EmojiEmotionsIcon style={{ fontSize: "6rem" }} />,
           subtitle: "Happy Customers.",
         },
       },
       {
         concept: {
-          title: "10+",
+          title: "12+",
           icon: <TimelineIcon style={{ fontSize: "6rem" }} />,
           subtitle: "Years Of Experience",
         },
@@ -42,7 +45,7 @@ class About extends Component {
         <div className="container">
           <Heading
             title={"About Us"}
-            subtitle={"We Make It Happen"}
+            subtitle={"We Are Bold and yet Humble"}
             color={"#222"}
           />
           <ColGrid mantras={this.state.mantras} stats={this.state.stats} />
