@@ -18,21 +18,21 @@ class About extends Component {
     stats: [
       {
         interior: {
-          title: "500+",
+          title: "500",
           icon: <StarsIcon style={{ fontSize: "6rem" }} />,
           subtitle: "Projects Completed.",
         },
       },
       {
         land: {
-          title: "500+",
+          title: "500",
           icon: <EmojiEmotionsIcon style={{ fontSize: "6rem" }} />,
           subtitle: "Happy Customers.",
         },
       },
       {
         concept: {
-          title: "12+",
+          title: "12",
           icon: <TimelineIcon style={{ fontSize: "6rem" }} />,
           subtitle: "Years Of Experience",
         },

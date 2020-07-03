@@ -17,7 +17,7 @@ class Services extends Component {
         interior: {
           title: "Interior Design",
           subtitle:
-            "We make your home interior beautiful, safe and comfortable for your stay. We creatively determine the requirements of the space available and select essential, beautiful and decorative concepts such as paints and lighting. You will always want to come Home🏡",
+            "We tailor your available space to fit your personal comfort, from homes to offices and other commercial space. We creatively determine the requirements of the space available and select essential, beautiful and decorative concepts such as paints and lighting. You will fall in love with the transformation!",
         },
       },
       {
@@ -31,7 +31,7 @@ class Services extends Component {
         concept: {
           title: "Concept Design",
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "To us there is no bad idea, we are determined to take any challenging idea and conceptualize it to a masterpiece. We provide dedicated support in brainstorming, planning and designing until your dream becomes a reality.",
         },
       },
       {
@@ -63,7 +63,7 @@ class Services extends Component {
           title: "Professional Service",
           icon: <EcoIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "Our great enthusiasm for customer services will ensure that our clients will have an amazing time with us without compromising quality of our services",
         },
       },
       {
@@ -71,7 +71,7 @@ class Services extends Component {
           title: "Great Support",
           icon: <AllInclusiveIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "Our customer experience team will always be ready to engage with you to ensure you get the best and fastest service anytime.",
         },
       },
       {
@@ -79,7 +79,7 @@ class Services extends Component {
           title: "Technical Skills",
           icon: <LayersIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "Coming up with the ideas is just a part of the process, we have a team of skilled technicians who will work with you untill the project is done. ",
         },
       },
       {
@@ -87,7 +87,7 @@ class Services extends Component {
           title: "Positive Reviews",
           icon: <CommentIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "You may not have heard of us but our reputation precedes us, we play hard in our game and our customers have shown continous appreciation of our work. We would love to embark on this journey with you.",
         },
       },
       {
@@ -95,7 +95,7 @@ class Services extends Component {
           title: "Highly Recommended",
           icon: <VerifiedUserIcon style={{ fontSize: "2.5rem" }} />,
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "We are the leaders in this game, and we wear that cape with pride. Our innovation and creativity speaks all the words for us and our customers know that.",
         },
       },
     ],
