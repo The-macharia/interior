@@ -24,7 +24,7 @@ class Services extends Component {
         land: {
           title: "Land Scaping",
           subtitle:
-            "We create visual attraction in layering, texture contrast, colour and bloom. We improve your outdoor space by planning, designing and modifying the visible features in your environment which entails the flora and fauna to bring joy, beauty, symmetry, balance to nature and a peaceful place to stroll on. We execute hardscapes, walkways,play areas, fences, herb gardens, pools, fountains, landscape, garden lighting and keeping pollinators alive by planting flowers.",
+            "We create visual attraction in layering, texture contrast, colour and bloom. We improve your outdoor space by planning, designing and modifying the visible features in your environment which entails the flora and fauna to bring joy, beauty, symmetry, balance to nature and a peaceful place to stroll on. We execute hardscapes, walkways,play areas, fences, herb gardens, pools, fountains, landscape lighting, garden lighting and keeping pollinators alive by planting flowers.",
         },
       },
       {
@@ -38,7 +38,7 @@ class Services extends Component {
         arch: {
           title: "Architecture Design",
           subtitle:
-            "Sony laptops are among the most well known laptops on todays market. Sony is a name that over time has established itself as creating a solid product.",
+            "We break down a large project into manageable chunks by giving  individual attention to each aspect, space and detail of the project to refine the scheme into final design.",
         },
       },
       {
@@ -126,12 +126,9 @@ class Services extends Component {
                 <h1>Get to Know A Project Estimate</h1>
                 <span>
                   <p>
-                    {" "}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere earum magni nemo fugiat. Provident accusamus
-                    cupiditate repellendus numquam, ipsum culpa quia possimus
-                    ratione adipisci expedita, obcaecati quidem sapiente qui
-                    dolores.
+                    It is common for projects to difer in pricing. But don't
+                    worry, we are always here to answer any questions you have.
+                    Click on this button to request your own estimate.
                   </p>
                 </span>
               </div>

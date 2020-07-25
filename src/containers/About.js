@@ -8,7 +8,7 @@ import TimelineIcon from "@material-ui/icons/Timeline";
 class About extends Component {
   state = {
     mantras: [
-      { vision: "to be internationally recognized as world leader" },
+      { vision: "Bring beauty and life to every space" },
       {
         mission:
           "To make a difference by providing quality design for your space",

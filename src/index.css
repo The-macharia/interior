@@ -57,11 +57,13 @@ p {
 
 a {
   transition: all 0.2s !important;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
   color: #04091e !important;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .card {
@@ -82,9 +84,25 @@ a:hover {
   color: #8e701d !important;
 }
 
+.success {
+  width: 100%;
+  height: 5rem;
+  color: #eee;
+  background-color: #33c533;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.MuiInputLabel-formControl,
+.MuiInputLabel-animated {
+  font-size: 1.5rem;
+  color: #04091e;
+}
 nav {
   background-color: #8e701d;
-  box-shadow: 0 .1rem .2rem #04091e;
+  box-shadow: 0 0.1rem 0.2rem #04091e;
 }
 @media (max-width: 600px) {
   p {

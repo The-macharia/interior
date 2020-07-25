@@ -38,8 +38,8 @@ const ColGrid = (props) => {
               <br />
               Whether renovating or construction we always make your
               satisfaction out first priority. Our project is the only baby we
-              spoils and pamper to make sure we give you the best services in
-              the market.
+              spoil and pamper to make sure we give you the best services in the
+              market.
             </p>
           </div>
         </div>

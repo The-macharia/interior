@@ -9,7 +9,8 @@ const Form = (props) => {
     backgroundColor: "transparent",
     margin: "2rem 0",
     borderRadius: ".5rem",
-    fontSize: "1.7rem"
+    fontSize: "1.7rem",
+    transition: "all .3s",
   };
   return (
     <form
@@ -21,6 +22,12 @@ const Form = (props) => {
         borderRadius: ".5rem",
       }}
     >
+      {props.show && (
+        <div className="success">
+          Message Sent Successfully! We will get back to you shortly.
+        </div>
+      )}
+
       <TextField
         label="Name"
         name="name"
@@ -28,7 +35,7 @@ const Form = (props) => {
         required
         onChange={props.changed}
         style={styles}
-        size="large"
+        // size="large"
       />
       <TextField
         label="Email"
@@ -37,7 +44,7 @@ const Form = (props) => {
         required
         onChange={props.changed}
         style={styles}
-        size="large"
+        // size="large"
       />
       <TextField
         label="Subject"
@@ -45,11 +52,11 @@ const Form = (props) => {
         name="subject"
         onChange={props.changed}
         style={styles}
-        size="large"
+        // size="large"
       />
       <TextField
         aria-label="message textarea"
-        rowsMin={3}
+        // rowsMin={3}
         type="textarea"
         name="message"
         required
@@ -57,16 +64,16 @@ const Form = (props) => {
         placeholder="Your Message"
         onChange={props.changed}
         style={styles}
-        size="large"
+        // size="large"
       />
 
       <div className="text-center">
         <Button
           variant="contained"
-          size="large"
+          // size="large"
           type="submit"
           color="primary"
-          endIcon={<SendIcon style={{ fontSize: "2rem", color: "white" }} />}
+          endIcon={<SendIcon style={{ fontSize: "1.7rem", color: "white" }} />}
         >
           Send
         </Button>
