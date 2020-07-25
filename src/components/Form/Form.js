@@ -22,11 +22,7 @@ const Form = (props) => {
         borderRadius: ".5rem",
       }}
     >
-      {props.show && (
-        <div className="success">
-          Message Sent Successfully! We will get back to you shortly.
-        </div>
-      )}
+      {props.show && props.showMessage}
 
       <TextField
         label="Name"

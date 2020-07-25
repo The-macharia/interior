@@ -60,6 +60,7 @@ class Contact extends Component {
       },
     },
     show: false,
+    showMessage: "",
   };
 
   handleChangeHandler = (e, name) => {
@@ -82,10 +83,28 @@ class Contact extends Component {
         this.setState({ show: true });
 
         setTimeout(() => {
-          this.setState({ show: false });
-        }, 5000);
+          this.setState({
+            show: false,
+            showMessage: (
+              <div className="success" style={{ background: "#33c533" }}>
+                Message Sent Successfully! We will get back to you shortly.
+              </div>
+            ),
+          });
+        }, 10000);
       })
-      .catch((error) => console.log(error));
+      .catch((error) =>
+        setTimeout(() => {
+          this.setState({
+            show: false,
+            showMessage: (
+              <div className="success" style={{ background: "#33c533" }}>
+                There was an error sending your message. Please Try again later!
+              </div>
+            ),
+          });
+        }, 5000)
+      );
   };
 
   render() {
@@ -140,6 +159,7 @@ class Contact extends Component {
             <div className="col-md-6">
               <Form
                 show={this.state.show}
+                showMessage={this.state.showMessage}
                 submitHandler={this.submitHandler}
                 changed={(e, name) =>
                   this.handleChangeHandler(e, e.target.name)
